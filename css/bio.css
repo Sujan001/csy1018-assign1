@@ -1,0 +1,53 @@
+.hex-image > img {
+  position: absolute;
+  z-index: 2;
+  margin-top: 48%;
+  width: 60%;
+  height: 550px;
+}
+.hex-image > p{
+  position: absolute;
+  z-index: 3;
+  font-size:100px;
+  margin-left: 250px;
+  margin-top:63%;
+}
+.connector-2{
+  height: 90px;
+  width: 140px;
+  position: absolute;
+  z-index: 3;
+  background-color: blue;
+  margin-top: 64%;
+  margin-left: 584.4px;
+}
+.bio-content{
+  height: 550px;
+  width: 580px;
+  position: absolute;
+  z-index: 3;
+  background-color: lightblue;
+  margin-top: 48%;
+  margin-left: 724.30px;
+}
+.sub-content-bio{
+  height: 595px;
+  width: 480px;
+  position: absolute;
+  z-index: 3;
+  background-color: blue;
+  margin-top: -5%;
+  margin-left: 50.30px;
+  overflow-y: scroll;
+  padding-bottom: 2%;
+}
+
+.background-image{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  margin-top: -15%;
+}
+footer{
+  margin-top: -7%;
+}

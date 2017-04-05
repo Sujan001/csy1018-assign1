@@ -1,0 +1,107 @@
+.hexagon12 {
+  position: relative;
+  width: 170px;
+  height: 98.15px;
+  background-color: #F3ECD9;
+  top: 170px;
+  left: 1100px;
+}
+.hexagon12 img{
+  border-radius: 80px;
+  margin-top: -20px;
+  position: absolute;
+  z-index: 2;
+}
+.hexagon12:before,
+.hexagon12:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 85px solid transparent;
+  border-right: 85px solid transparent;
+}
+
+.hexagon12:before {
+  bottom: 100%;
+  border-bottom: 49.07px solid #F3ECD9;
+}
+
+.hexagon12:after {
+  top: 100%;
+  width: 0;
+  border-top: 49.07px solid #F3ECD9;
+  left:0;
+}
+
+
+form{
+height: 560px;
+}
+fieldset{
+  height: 555px;
+  margin-top: -80px;
+  background-color: grey;
+}
+label{
+  font-size:2em;
+  font-family:monospace;
+}
+
+input{
+  width: 50%;
+  height: 6.5%;
+  font-size: 1em;
+}
+.name{
+margin-left: 135px;
+}
+.name-box{
+  margin-left: 20px;
+  width: 40%;
+}
+.address{
+margin-left: 88px;
+}
+.address-box{
+  margin-left: 32px;
+  width: 40%;
+}
+.email{
+margin-left: 120px;
+}
+.email-box{
+  margin-left: 30px;
+  width: 40%;
+}
+.country{
+margin-left: 90px;
+}
+.country-box{
+  margin-left: 29px;
+  width: 10%;
+  height: 8%;
+  font-size: 1em;
+}
+.comment{
+margin-left: 90px;
+}
+.comment-box{
+  margin-left: 29px;
+  width: 40%%;
+  height: 40%;
+}
+textarea{
+  width: 40%;
+  font-size: 1.2em;
+}
+
+.send{
+  width: 10%;
+  height: 50px;
+  font-size: 1.2em;
+  color:black;
+margin-left: 263px;
+}
+footer{
+  margin-top:-763px;
+}
