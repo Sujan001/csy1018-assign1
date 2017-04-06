@@ -473,8 +473,13 @@ body, html {
    width:180px;
    border-radius: 50%;
    margin-left:600px;
-   background-color: red;
+   background-color: black;
    opacity: 0.4;
+
+  }
+  .icon_position{
+    margin-left: 30%;
+    margin-top: 20%;
   }
   .circle-2{
     height: 180px;
@@ -482,7 +487,7 @@ body, html {
     border-radius: 50%;
     margin-left:700px;
     margin-top: -80px;
-    background-color: green;
+    background-color: black;
     opacity: 0.4;
    }
    .circle-3{
@@ -491,7 +496,7 @@ body, html {
      border-radius: 50%;
      margin-left:500px;
      margin-top: -180px;
-     background-color: grey;
+     background-color: black;
      opacity: 0.4;
     }
     .circle-4{
@@ -500,7 +505,7 @@ body, html {
       border-radius: 50%;
       margin-left:600px;
       margin-top: -80px;
-      background-color: yellow;
+      background-color: black;
       opacity: 0.4;
      }
 
