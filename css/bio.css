@@ -11,15 +11,16 @@
   font-size:100px;
   margin-left: 250px;
   margin-top:63%;
+  font-family: 'Emilys Candy', cursive;
 }
 .connector-2{
   height: 90px;
   width: 140px;
   position: absolute;
   z-index: 3;
-  background-color: blue;
+  background-color: skyblue;
   margin-top: 64%;
-  margin-left: 584.4px;
+  margin-left: 581px;
 }
 .bio-content{
   height: 550px;
@@ -28,18 +29,20 @@
   z-index: 3;
   background-color: lightblue;
   margin-top: 48%;
-  margin-left: 724.30px;
+  margin-left: 700.30px;
 }
 .sub-content-bio{
   height: 595px;
   width: 480px;
   position: absolute;
   z-index: 3;
-  background-color: blue;
+  background-color: white;
   margin-top: -5%;
-  margin-left: 50.30px;
+  margin-left: 53px;
   overflow-y: scroll;
   padding-bottom: 2%;
+  font-size: 1.7em;
+  font-family:'Bubbler One', sans-serif;
 }
 
 .background-image{

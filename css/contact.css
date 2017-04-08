@@ -1,3 +1,6 @@
+body{
+  background-color: skyblue;
+}
 .hexagon12 {
   position: relative;
   width: 170px;
@@ -40,7 +43,8 @@ height: 560px;
 fieldset{
   height: 555px;
   margin-top: -80px;
-  background-color: grey;
+  background-color: #001E40;
+  opacity: 0.8;
 }
 label{
   font-size:2em;
