@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/index.css">
+    <!--Google api font added here-->
     <link href="https://fonts.googleapis.com/css?family=Emilys+Candy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Julius+Sans+One|Poiret+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
@@ -11,11 +12,13 @@
   </head>
   <body>
     <header>
-    <!--press button navigation-->
+    <!--Circular navigation and a hover button with a dropdown menu-->
 
-    <div class="button__holder">
-        <button class="plus"></button>
-    <div class="navigation">
+    <div class="button-box">
+      <!--this holds the button and its symbol for navigation-->
+        <button class="symbol"></button>
+    <div class="circle-holder">
+      <!--Four circular divs-->
         <div class="circle-1">
         </div>
       <div class="circle-2">
@@ -24,85 +27,116 @@
       </div>
       <div class="circle-4">
       </div>
-      <a href="index.html"><img src="images/icon_home.png" class="icon_position1"></a>
-      <a href="bio.html">    <img src="images/icon_bio.png" class="icon_position2"></a>
-        <a href="cv.html">    <img src="images/icon_cv.png" class="icon_position3"></a>
-          <a href="contact.html">    <img src="images/icon_contact.png" class="icon_position4"></a>
+      <!--Icon images linked with respective html pages, embedded in the navigation div-->
+      <a href="index.html"><img src="images/icon_home.png" class="icon_position1" alt="homepage icon"></a>
+      <a href="bio.html"> <img src="images/icon_bio.png" class="icon_position2" alt="Biography icon"></a>
+        <a href="cv.html"><img src="images/icon_cv.png" class="icon_position3" alt="curriculum vitae icon"></a>
+          <a href="contact.html"> <img src="images/icon_contact.png" class="icon_position4" alt="conatct icon"></a>
     </div>
   </div>
 </header>
+<!--Background image fixed in a div-->
   <div class="main">
     <img src="images/photo1.jpg"
          alt="main background image">
   </div>
+  <!--a net like layer added above the background image-->
   <div class="net-layer">
   </div>
-<div class="hexagon"><img src="images/1.jpg"
-  alt="background image 1">
-      <div class="hexagon-overlay">
-        <div class="text">I</div>
+  <!--Nine hexagon divs added before the net layer containing individual images with hover effect-->
+
+<div class="hex-structure1"><img src="images/1.jpg"
+  alt="First hexagon image">
+      <div class="hex-layer">
+        <div class="text-above-hex">I</div>
       </div>
     </div>
 
-    <div class="hexagon2"><img src="images/2.jpg" alt="background image 2">
-      <div class="hexagon-overlay">
-        <div class="text">Dream</div>
-      </div>
-    </div>
-    <div class="hexagon3"><img src="images/3.jpg" alt="background image 3">
-      <div class="hexagon-overlay">
-        <div class="text">My</div>
-      </div>
-    </div>
-    <div class="hexagon4">
-      <div class="hexagon-overlay">
-        <div class="text">Painting</div>
-      </div>
-    </div>
-    <div class="hexagon5"><img src="images/5.jpg" alt="background image 5">
-      <div class="hexagon-overlay">
-        <div class="text">And</div>
-      </div>
-    </div>
-    <div class="hexagon6"><img src="images/6.jpg" alt="background image 6">
-      <div class="hexagon-overlay">
-        <div class="text">I</div>
-      </div>
-    </div>
-    <div class="hexagon7"><img src="images/7.jpg" alt="background image 7">
-      <div class="hexagon-overlay">
-        <div class="text">Paint</div>
-      </div>
-    </div>
-    <div class="hexagon8"><img src="images/8.jpg" alt="background image 8">
-      <div class="hexagon-overlay">
-        <div class="text">My</div>
-      </div>
-    </div>
-    <div class="hexagon9"><img src="images/9.jpg" alt="background image 9">
-      <div class="hexagon-overlay">
-        <div class="text">Dream</div>
-      </div>
-    </div>
+    <div class="before-div1"></div>
+    <div class="after-div1"></div>
 
 
+    <div class="hex-structure2"><img src="images/2.jpg" alt="background image 2">
+      <div class="hex-layer">
+        <div class="text-above-hex">Dream</div>
+      </div>
+    </div>
+    <div class="before-div2"></div>
+    <div class="after-div2"></div>
 
-  <div class="sidenav" id="mysidenav">
-      <a href="www.facebook.com" id="facebook"><p>Facebook<img src="images/facebook.png" alt="social media icon-1"></p></a>
-      <a href="www.linkedin.com" id="in"><p>linkedin<img src="images/in.png" alt="social media icon-1"></p></a>
-      <a href="www.twitter.com" id="twitter"><p>twitter<img src="images/twitter.png" alt="social media icon-1"> </p></a>
-      <a href="www.instagram.com" id="insta"><p>instagram<img src="images/instagram.png"></p></a>
-      <a href="www.reddit.com" id="reddit"><p>reddit<img src="images/reddit.png"></p></a>
+    <div class="hex-structure3"><img src="images/3.jpg" alt="background image 3">
+      <div class="hex-layer">
+        <div class="text-above-hex">My</div>
+      </div>
+    </div>
+    <div class="before-div3"></div>
+    <div class="after-div3"></div>
+    <div class="hex-structure4"><img src="images/4.jpg" alt="my image">
+      <div class="hex-layer">
+        <div class="text-above-hex">Painting</div>
+      </div>
+    </div>
+    <div class="before-div4"></div>
+    <div class="after-div4"></div>
+
+    <div class="hex-structure5"><img src="images/5.jpg" alt="background image 5">
+      <div class="hex-layer">
+        <div class="text-above-hex">And</div>
+      </div>
+    </div>
+    <div class="before-div5"></div>
+    <div class="after-div5"></div>
+    <div class="hex-structure6"><img src="images/6.jpg" alt="background image 6">
+      <div class="hex-layer">
+        <div class="text-above-hex">I</div>
+      </div>
+    </div>
+    <div class="before-div6"></div>
+    <div class="after-div6"></div>
+    <div class="hex-structure7"><img src="images/7.jpg" alt="background image 7">
+      <div class="hex-layer">
+        <div class="text-above-hex">Paint</div>
+      </div>
+    </div>
+    <div class="before-div7"></div>
+    <div class="after-div7"></div>
+    <div class="hex-structure8"><img src="images/8.jpg" alt="background image 8">
+      <div class="hex-layer">
+        <div class="text-above-hex">My</div>
+      </div>
+    </div>
+    <div class="before-div8"></div>
+    <div class="after-div8"></div>
+    <div class="hex-structure9"><img src="images/9.jpg" alt="background image 9">
+      <div class="hex-layer">
+        <div class="text-above-hex">Dream</div>
+      </div>
+    </div>
+    <div class="before-div9"></div>
+    <div class="after-div9"></div>
+
+
+<!--Five different social media icons fixd at the left side of the screen with trasnsition effect-->
+  <div class="social-media-icons">
+      <a href="https://www.facebook.com/" id="icon-1"><p>Facebook<img src="images/facebook.png" alt="social media icon-1"></p></a>
+      <a href="https://www.linkedin.com/" id="icon-2"><p>linkedin<img src="images/in.png" alt="social media icon-2"></p></a>
+      <a href="https://www.twitter.com/" id="icon-3"><p>twitter<img src="images/twitter.png" alt="social media icon-1"> </p></a>
+      <a href="https://www.instagram.com/" id="icon-4"><p>instagram<img src="images/instagram.png"></p></a>
+      <a href="https://www.reddit.com/" id="icon-5"><p>reddit<img src="images/reddit.png"></p></a>
   </div>
 
+<!--an overlay added above the background image-->
   <div class="overlay-1">
     HEY!!
   </div>
 
-    <!--For cool about -->
-<div class="parallex">
-    <div class="hexagon10"><h1>ABOUT ME</h1></div>
+    <!--two divs with a title and content with some links in between which are kept in another overlapping div-->
+<div class="overlap-layer">
+    <div class="hex-structure10"></div><div class="about">ABOUT ME</div>
+    <div class="before-div10"></div>
+    <div class="after-div10"></div>
     <div class="content1">
+      <!--this (sub-content) div is added in content1 div to position the text inside it in the middle leaving some gaps sideways-->
       <div class="sub-content">
       <h2>My Hobbies</h2>
       <p>Music:I do karaoke and cover sometimes.</p><p>Travel and tours: I often go hikings and tours on my holidays. You can check some of my galleries here:<a href="https://www.instagram.com/suz_ad/">My Instagram Profile.</a></p>
@@ -110,18 +144,18 @@
       <h2>My Interest</h2>
       <p>Robotics:In short i am an innovator and a tech-enthusiast.</p>
       <p>Theoritical Physics:In love with equations and universal laws.</p>
-
     </div>
-
     </div>
+    <!--shows the other two divs connected together-->
       <div class="connector">
    </div>
   </div>
-
   <footer>
+    <!--footer portion with some contents about biography and the direction to the page-->
     <div class="layer-2"> <p> Sujan, a student, and an innovator is currently<br> a level-4 student at the NAMI Institute.</p>
     <p>He is an A-level gradutae from Trinity International College.<br>He's is eager to give life a meaning. Therefore he has indulged himself into numerous activities. Robotics...... <br><a href="bio.html">See more >></a></p>
     </div>
+    <!--this portion includes the copyright statements-->
     <div class="layer-3"><p>Copyright (c) 2017 Copyright       Holder All Rights Reserved<br>
       Developed By:Sujan Adhikari</p>
     </div>

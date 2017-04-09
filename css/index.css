@@ -1,16 +1,19 @@
+/*The entire page is introduced with a grab like cursor*/
 body{
   cursor:grab;
+  margin:0;
 }
 .main img{
   width: 1366px;
   height: 768px;
   position: fixed;
   margin-top: -100px;
-  /*background-color: #F5F5F5;*/
 }
+/* the idea of keeping this as a transparent layer was inspired from a CSS image slideshow tutorial by Mary lou */
 .net-layer {
     content: '';
-    background: transparent url(../images/pattern.png) repeat top left;
+    background: transparent url(../images/pattern.png) ; /* The .png file is repeated all over the screen as a trasparent layer */
+    background-repeat: repeat;
     height: 768px;
     width: 1349.59px;
     position: fixed;
@@ -18,43 +21,46 @@ body{
     margin-top: -100px;
 }
 /*First hexagon*/
-.hexagon {
+.hex-structure1 {
   position: relative;
-  width: 170px;
-  height: 98.15px;
+  width: 170.3px;
+  height: 100px;
   background-color: #F3ECD9;
   top: 120px;
   left: 680px;
   cursor: grabbing;
 }
-.hexagon img{
+/* the image is kept only in the middle div with a circular edge*/
+.hex-structure1 img{
   border-radius: 80px;
   margin-top: -20px;
   position: absolute;
   z-index: 2;
 }
-.hexagon:before,
-.hexagon:after {
+/* two different divs were created above and below the main div and an appropriate border bottom value was given to sharpen the edge of those sections.*/
+.before-div1 {
+  top: 24.5%;
+  border-bottom: 50px solid #F3ECD9;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 680px;
 }
-
-.hexagon:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid #F3ECD9;
-}
-
-.hexagon:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid #F3ECD9;
+/*this is after the main div*/
+.after-div1 {
+  top: 45.5%;
+  border-top: 50px solid #F3ECD9;
   left:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 680px;
 }
+
  /*second hexagon */
- .hexagon2 {
+ .hex-structure2 {
    position: relative;
    width: 170px;
    height: 98.15px;
@@ -63,35 +69,37 @@ body{
    left:865px;
    cursor: grabbing;
  }
- .hexagon2 img{
+ .hex-structure2 img{
    border-radius: 80px;
    margin-top: -20px;
    position: absolute;
    z-index: 2;
  }
- .hexagon2:before,
- .hexagon2:after {
+
+
+ .before-div2 {
+   top: 24.7%;
+   border-bottom: 50px solid #858553;
    content: "";
    position: absolute;
-   width: 0;
-   border-left: 85px solid transparent;
-   border-right: 85px solid transparent;
+   border-left: 86px solid transparent;
+   border-right: 84px solid transparent;
+   margin-left: 865px;
  }
 
- .hexagon2:before {
-   bottom: 100%;
-   border-bottom: 49.07px solid #858553;
- }
-
- .hexagon2:after {
-   top: 100%;
-   width: 0;
-   border-top: 49.07px solid #858553;
-   left: 0;
+ .after-div2 {
+   top: 45.5%;
+   border-top: 50px solid #858553;
+   left:0;
+   content: "";
+   position: absolute;
+   border-left: 86px solid transparent;
+   border-right: 84px solid transparent;
+   margin-left: 865px;
  }
 /*third hexagon */
 
-.hexagon3 {
+.hex-structure3 {
   position: relative;
   width: 170px;
   height: 98.15px;
@@ -100,71 +108,79 @@ body{
   left:590px;
   cursor: grabbing;
 }
-.hexagon3 img{
+.hex-structure3 img{
   border-radius: 80px;
   margin-top: -20px;
   position: absolute;
   z-index: 2;
 }
-.hexagon3:before,
-.hexagon3:after {
+
+.before-div3 {
+  top: 47.7%;
+  border-bottom: 50px solid skyblue;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 589px;
 }
 
-.hexagon3:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid skyblue;
-}
-
-.hexagon3:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid skyblue;
-  left: 0;
+.after-div3 {
+  top: 68.9%;
+  border-top: 50px solid skyblue;
+  left:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 589px;
 }
 /*fourth heaxagon*/
-.hexagon4 {
+.hex-structure4 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #ee6557;
   top:-15px;
   left:775px;
   cursor: grabbing;
 }
+.hex-structure4 img{
+  border-radius: 80px;
+  margin-top: -20px;
+  position: absolute;
+  z-index: 2;
+}
 
-.hexagon4:before,
-.hexagon4:after {
+
+.before-div4 {
+  top: 47.4%;
+  border-bottom: 50px solid #ee6557;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 774px;
 }
 
-.hexagon4:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid #ee6557;
-}
-
-.hexagon4:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid #ee6557;
-left: 0;
+.after-div4 {
+  top: 68.65%;
+  border-top: 50px solid #ee6557;
+  left:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 775px;
 }
 
 /*fifth heaxagon*/
-.hexagon5 {
+.hex-structure5 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #E9E1D6;
   top:-115px;
   left:960px;
   cursor: grabbing;
 }
-.hexagon5 img{
+.hex-structure5 img{
   border-radius: 80px;
   margin-top: -20px;
   position: absolute;
@@ -172,183 +188,182 @@ left: 0;
   cursor: grabbing;
 }
 
-.hexagon5:before,
-.hexagon5:after {
+
+.before-div5 {
+  top: 47.2%;
+  border-bottom: 50px solid white;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 960px;
 }
 
-.hexagon5:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid #E9E1D6;
-}
-
-.hexagon5:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid #E9E1D6;
-left: 0;
+.after-div5 {
+  top: 68.5%;
+  border-top: 50px solid white;
+  left:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 960px;
 }
 
 /*sixth heaxagon*/
-.hexagon6 {
+.hex-structure6 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #C5C2A3;
   top:-48px;
   left:500px;
   cursor: grabbing;
 }
-.hexagon6 img{
+.hex-structure6 img{
   border-radius: 80px;
   margin-top: -20px;
   position: absolute;
   z-index: 2;
 }
-.hexagon6:before,
-.hexagon6:after {
+.before-div6 {
+  top: 70.9%;
+  border-bottom: 50px solid white;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 500px;
 }
 
-.hexagon6:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid #C5C2A3;
-}
-
-.hexagon6:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid #C5C2A3;
-left: 0;
+.after-div6 {
+  top: 92.1%;
+  border-top: 50px solid white;
+  left:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 500px;
 }
 
 /*seventh heaxagon*/
-.hexagon7 {
+.hex-structure7 {
   position: relative;width: 170px;height: 98.15px;
   background-color: black;
   top:-150px;
   left:685px;
   cursor: grabbing;
 }
-.hexagon7 img{
+.hex-structure7 img{
   border-radius: 80px;
   margin-top: -20px;
   position: absolute;
   z-index: 2;
 }
-.hexagon7:before,
-.hexagon7:after {
+.before-div7 {
+  top: 70.3%;
+  border-bottom: 50px solid black;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 686px;
 }
 
-.hexagon7:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid black;
-}
-
-.hexagon7:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid black;
-left: 0;
+.after-div7 {
+  top: 91.5%;
+  border-top: 50px solid black;
+  left:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 686px;
 }
 
 
 /*seventh heaxagon*/
-.hexagon8 {
+.hex-structure8 {
   position: relative;width:170px;height: 98.15px;
   background-color: #001E40;
   top:-250px;
   left:870px;
   cursor: grabbing;
 }
-.hexagon8 img{
+.hex-structure8 img{
   border-radius: 80px;
   margin-top: -20px;
   position: absolute;
   z-index: 2;
 }
-.hexagon8:before,
-.hexagon8:after {
+.before-div8 {
+  top: 70.1%;
+  border-bottom: 50px solid #001E40;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 869px;
 }
 
-.hexagon8:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid #001E40;
-}
-
-.hexagon8:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid #001E40;
-left: 0;
+.after-div8 {
+  top: 91.6%;
+  border-top: 50px solid #001E40;
+  left:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 869px;
 }
 
 /*ninth heaxagon*/
-.hexagon9 {
+.hex-structure9 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #A3A9A5;
   top:-350px;
   left:1055px;
   cursor: grabbing;
 }
-.hexagon9 img{
+.hex-structure9 img{
   border-radius: 80px;
   margin-top: -20px;
   position: absolute;
   z-index: 2;
 }
 
-.hexagon9:before,
-.hexagon9:after {
+.before-div9 {
+  top: 69.8%;
+  border-bottom: 50px solid #A3A9A5;
   content: "";
   position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 1055px;
 }
 
-.hexagon9:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid #A3A9A5;
-}
-
-.hexagon9:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid #A3A9A5;
-left: 0;
-}
-
-.hexagon-overlay {
-  position: absolute;
-  bottom: 100%;
+.after-div9 {
+  top: 91%;
+  border-top: 50px solid #A3A9A5;
   left:0;
-  right:0;
+  content: "";
+  position: absolute;
+  border-left: 86px solid transparent;
+  border-right: 84px solid transparent;
+  margin-left: 1055px;
+}
+
+/*transparent layer above the main div i.e the middle of the hexagon*/
+.hex-layer {
+  position: absolute;
   background-color: black;
   overflow:hidden;
-  opacity:0.1;
+  opacity:0.2;
   width:170px;
-  height:0;
-  transition: 00.1s;
+  transition: 0.4s;
 }
 
-.hexagon:hover .hexagon-overlay,.hexagon2:hover .hexagon-overlay, .hexagon3:hover .hexagon-overlay, .hexagon4:hover .hexagon-overlay, .hexagon5:hover .hexagon-overlay, .hexagon6:hover .hexagon-overlay, .hexagon7:hover .hexagon-overlay, .hexagon8:hover .hexagon-overlay, .hexagon9:hover .hexagon-overlay{
+/* This transition effect was learned from w3schools examples*/
+.hex-structure1:hover .hex-layer,.hex-structure2:hover .hex-layer, .hex-structure3:hover .hex-layer, .hex-structure4:hover .hex-layer, .hex-structure5:hover .hex-layer, .hex-structure6:hover .hex-layer, .hex-structure7:hover .hex-layer, .hex-structure8:hover .hex-layer, .hex-structure9:hover .hex-layer{
     bottom:-22px;
     height:140px;
     border-radius: 80px;
@@ -356,78 +371,74 @@ left: 0;
     z-index: 5;
 }
 
-.text{
-  white-space:nowrap;
+/* this div holds text above the hex-layer div*/
+.text-above-hex{
+  transform: translate(-50%,-50%);
   color: white;
   font-size: 35px;
   font-family: monospace;
   position: absolute;
-  overflow: hidden;
   top: 50%;
   left: 50%;
-  transform: translate(-50%,-50%);
 }
 
-/*start of sidebar social media*/
-.sidenav{
+/*social media icons added into the left side of the screen*/
+.social-media-icons a{
   position: fixed;
   top:20px;
-  color:black;
+  color:skyblue;
   z-index: 3;
   font-family: monospace;
-}
-#mysidenav a{
-  position: absolute;
-  border-radius: 0 5px 5px 0;
-  padding: 18px;
+  padding: 8px;
   width: 130px;
   height: 30px;
   transition: 0.3s;
-  text-decoration: none;
   left:-80px;
   cursor: grabbing;
 }
-#mysidenav a:hover{
+
+/*this hover effect was learned form w3sschools*/
+.social-media-icons a:hover{
   left:0;
 }
 
-
-#facebook{
+/*Here each icons are positioned respectively*/
+#icon-1{
   top:100px;
 }
 
-#facebook img{
+#icon-1 img{
   margin-top:-25%;
   margin-left:60%;
 }
 
-#insta{
+#icon-2{
   top:165px;
 }
 
-#insta img{
+#icon-2 img{
   margin-top:-25%;
   margin-left:60%;
 }
 
-#twitter{
+#icon-3{
   top:230px;
 }
-#twitter img{
+#icon-3 img{
   margin-top:-25%;
   margin-left:60%;
 }
-#in{
+#icon-4{
   top:295px;
 }
-#in img{
+#icon-4 img{
   margin-top:-25%;
   margin-left:60%;
 }
-#reddit{
+#icon-5{
   top:360px;
 }
-#reddit img{
+#icon-5 img{
   margin-top:-25%;
   margin-left:60%;
 }
@@ -450,11 +461,8 @@ left: 0;
   color:skyblue;
 }
 
-/*press button navigation code*/
 
-body, html {
-  margin: 0;
-}
+
 
 /* codes for designing circular structure */
 .circle-1{
@@ -466,6 +474,7 @@ body, html {
    opacity: 0.8;
    z-index: 4;
   }
+  /*this element position the icons into their respective circle*/
 .icon_position1{
     position: absolute;
     margin-left: 75.3%;
@@ -473,6 +482,7 @@ body, html {
     margin-top: -36%;
     transition: 0.35s;
 }
+/*this effect shows the icon in zooming view*/
 .icon_position1:hover, .icon_position2:hover, .icon_position3:hover, .icon_position4:hover{
   transform: scale(1.35);
 }
@@ -529,14 +539,15 @@ body, html {
      }
 
 /* codes for creating a button for navigation*/
-.button__holder {
+/*This idea was learned from the examples of Codepen to make a button*/
+.button-box {
   position: relative;
   width: 100px;
   height: 100px;
   left:47%;
 }
 
-.navigation{
+.circle-holder{
   display: none;
   position: fixed;
   z-index: 4;
@@ -544,17 +555,13 @@ body, html {
   left: -0.2%;
   padding-top: 6%;
 }
-.button__holder:after {
+.button-box:after {
   content: "";
   position: absolute;
   z-index: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
 
-.plus {
+.symbol {
   cursor: grabbing;
   position: fixed;
   z-index: 4;
@@ -564,36 +571,34 @@ body, html {
   background: #E9E1D6;
   border-radius: 50%;
   border: none;
-  transition: box-shadow 400ms cubic-bezier(0.3, 0, 0.75, 1.5), -webkit-transform 200ms cubic-bezier(0.3, 0, 0.7.5, 1.5);
-  transition: box-shadow 400ms cubic-bezier(0.3, 0, 0.75, 1.5), transform 200ms cubic-bezier(0.3, 0, 0.75, 1.5);
-  transition: box-shadow 400ms cubic-bezier(0.3, 0, 0.75, 1.5), transform 200ms cubic-bezier(0.3, 0, 0.75, 1.5), -webkit-transform 200ms cubic-bezier(0.3, 0, 0.75, 1.5);
+transition: box-shadow 300ms ease-in-out;
+-webkit-transition:box-shadow 300ms ease-in-out;
 
 }
-.plus:after {
+.symbol:after {
   content: "=>";
   font-size: 2.5em;
   line-height: 1.1em;
 }
-.plus:hover {
+.symbol:hover {
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
   box-shadow: 0 0 1px 15px black, 0 0 1px 30px white, 0 0 1px 45px #A3A9A5;
 }
-.button__holder:hover .navigation{
+.button-box:hover .circle-holder{
   display:block;
 }
 
-
-.parallex{
+.overlap-layer{
     position:relative;
-    margin-top: -280px;
+    margin-top: -210px;
     background-color: white;
     width: 1280px;
     height:689px;
     margin-left: 30px;
 }
 /*For cool about*/
-.hexagon10 {
+.hex-structure10 {
   position: relative;
   width: 500px;
   height: 288.68px;
@@ -602,42 +607,46 @@ body, html {
   left: 70px;
   opacity: 0.8;
 }
-.hexagon10 > h1 {
-font-size: 96px;
+/* this positions the about me text within the hexagon10 div*/
+.about {
+font-size: 5.7em;
 text-align: center;
 font-family: 'Emilys Candy', cursive;
 color: black;
 opacity: 0.8;
+position: absolute;
+left: 75px;
+margin-top: -40px;
 }
 
-.hexagon10:before,
-.hexagon10:after {
+.before-div10 {
+  top: 3.4%;
+  border-bottom: 144px solid skyblue;
   content: "";
   position: absolute;
-  width: 0;
   border-left: 250px solid transparent;
   border-right: 250px solid transparent;
+  margin-left: 69px;
 }
 
-.hexagon10:before {
-  bottom: 100%;
-  border-bottom: 144.34px solid skyblue ;
+.after-div10 {
+  top: 67%;
+  border-top: 144px solid skyblue;
   left:0;
+  content: "";
+  position: absolute;
+  border-left: 250px solid transparent;
+  border-right: 250px solid transparent;
+  margin-left: 69px;
 }
-
-.hexagon10:after {
-  top: 100%;
-  width: 0;
-  border-top: 144.34px solid skyblue ;
-  left: 0;
-}
+/*holds sub-content div*/
 .content1{
-height:757px;
+height:700px;
 width:580px;
 font-size: 25px;
 background-color: skyblue;
 margin-left: 700px;
-margin-top: -390px;
+margin-top: -370px;
 color: #78909c;
 font-family:'Bubbler One', sans-serif;
 text-align: center;
@@ -650,6 +659,7 @@ text-align: center;
   height:650px;
   margin-left:40px;
   background-color: white;
+  margin-top: 20px
 }
 
 .connector{
@@ -664,7 +674,7 @@ text-align: center;
 footer{
   position: absolute;
   z-index: 1;
-  top:1457px;
+  top:1462px;
 }
 .layer-2{
   height:300px;
@@ -687,6 +697,6 @@ footer{
     text-align: center;
     font-size:1.5em;
     background-color:#001E40;
-    font-family: serif;
-    color:black;
+    font-family: monospace;
+    color:white;
   }

@@ -109,3 +109,11 @@ margin-left: 263px;
 footer{
   margin-top:-763px;
 }
+@media only screen and (max-width: 380px) {
+body{
+  
+}
+
+
+
+}
