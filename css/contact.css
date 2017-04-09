@@ -1,63 +1,32 @@
 body{
   background-color: skyblue;
 }
-.hexagon12 {
-  position: relative;
-  width: 170px;
-  height: 98.15px;
-  background-color: #F3ECD9;
-  top: 170px;
-  left: 1100px;
-}
-.hexagon12 img{
-  border-radius: 80px;
-  margin-top: -20px;
-  position: absolute;
-  z-index: 2;
-}
-.hexagon12:before,
-.hexagon12:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  border-left: 85px solid transparent;
-  border-right: 85px solid transparent;
-}
-
-.hexagon12:before {
-  bottom: 100%;
-  border-bottom: 49.07px solid #F3ECD9;
-}
-
-.hexagon12:after {
-  top: 100%;
-  width: 0;
-  border-top: 49.07px solid #F3ECD9;
-  left:0;
-}
-
-
+/*height of the form fixed to 560 pixels*/
 form{
 height: 560px;
 }
+/*position and size of the border fixed for the form*/
 fieldset{
   height: 555px;
-  margin-top: -80px;
+  margin-top: 20px;
   background-color: #001E40;
   opacity: 0.8;
 }
+/*fonts details given for descriptive values of labels*/
 label{
   font-size:2em;
   font-family:monospace;
 }
-
+/*size mainatined of all input setions*/
 input{
   width: 50%;
   height: 6.5%;
   font-size: 1em;
 }
+/*position of the labels and input tags managed*/
 .name{
 margin-left: 135px;
+color: white;
 }
 .name-box{
   margin-left: 20px;
@@ -65,6 +34,7 @@ margin-left: 135px;
 }
 .address{
 margin-left: 88px;
+color:white;
 }
 .address-box{
   margin-left: 32px;
@@ -72,13 +42,16 @@ margin-left: 88px;
 }
 .email{
 margin-left: 120px;
+color:white;
 }
 .email-box{
   margin-left: 30px;
   width: 40%;
+
 }
 .country{
 margin-left: 90px;
+color:white;
 }
 .country-box{
   margin-left: 29px;
@@ -88,6 +61,7 @@ margin-left: 90px;
 }
 .comment{
 margin-left: 90px;
+color:white;
 }
 .comment-box{
   margin-left: 29px;
@@ -98,7 +72,24 @@ textarea{
   width: 40%;
   font-size: 1.2em;
 }
-
+.my-photo{
+  height:300px;
+  width:400px;
+  margin-top: -410px;
+  margin-left: 900px;
+  z-index: 2;
+  position: absolute;
+}
+.contact-text {
+  position: absolute;
+  margin-left: 985px;
+  margin-top: -350px;
+  z-index: 2;
+}
+.contact-text > p{
+  font-size: 4em;
+  font-family: monospace;
+}
 .send{
   width: 10%;
   height: 50px;
@@ -108,12 +99,4 @@ margin-left: 263px;
 }
 footer{
   margin-top:-763px;
-}
-@media only screen and (max-width: 380px) {
-body{
-  
-}
-
-
-
 }

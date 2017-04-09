@@ -383,7 +383,7 @@ body{
 }
 
 /*social media icons added into the left side of the screen*/
-.social-media-icons a{
+.social-media-icons-logo a{
   position: fixed;
   top:20px;
   color:skyblue;
@@ -398,13 +398,21 @@ body{
 }
 
 /*this hover effect was learned form w3sschools*/
-.social-media-icons a:hover{
+.social-media-icons-logo a:hover{
   left:0;
 }
 
 /*Here each icons are positioned respectively*/
+#icon-logo{
+  top:-40px;
+  margin-left: 80px;
+}
+#icon-logo > p{
+  font-size: 2.5em;
+}
+
 #icon-1{
-  top:100px;
+  top:180px;
 }
 
 #icon-1 img{
@@ -413,7 +421,7 @@ body{
 }
 
 #icon-2{
-  top:165px;
+  top:245px;
 }
 
 #icon-2 img{
@@ -422,21 +430,21 @@ body{
 }
 
 #icon-3{
-  top:230px;
+  top:310px;
 }
 #icon-3 img{
   margin-top:-25%;
   margin-left:60%;
 }
 #icon-4{
-  top:295px;
+  top:375px;
 }
 #icon-4 img{
   margin-top:-25%;
   margin-left:60%;
 }
 #icon-5{
-  top:360px;
+  top:440px;
 }
 #icon-5 img{
   margin-top:-25%;
