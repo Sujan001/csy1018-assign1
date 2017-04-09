@@ -67,11 +67,11 @@ color:white;
 }
 .comment-box{
   margin-left: 29px;
-  width: 40%%;
+  width: 40%;
   height: 40%;
 }
-textarea{
-  width: 40%;
+textarea
+{
   font-size: 1.2em;
 }
 .my-photo{
