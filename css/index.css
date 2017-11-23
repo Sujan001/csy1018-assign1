@@ -29,7 +29,7 @@ body{
   width: 170.3px;
   height: 100px;
   background-color: #F3ECD9;
-  top: 120px;
+  top: 111px;
   left: 680px;
   cursor: grabbing;
 }
@@ -52,7 +52,7 @@ body{
 }
 /*this is after the main div*/
 .after-div1 {
-  top: 45.5%;
+  top: 47.2%;
   border-top: 50px solid #F3ECD9;
   left:0;
   content: "";
@@ -68,7 +68,7 @@ body{
    width: 170px;
    height: 98.15px;
    background-color: #858553;
-   top:22px;
+   top:13px;
    left:865px;
    cursor: grabbing;
  }
@@ -91,7 +91,7 @@ body{
  }
 
  .after-div2 {
-   top: 45.5%;
+   top: 47.2%;
    border-top: 50px solid #858553;
    left:0;
    content: "";
@@ -107,7 +107,7 @@ body{
   width: 170px;
   height: 98.15px;
   background-color: skyblue;
-  top:85px;
+  top:66px;
   left:590px;
   cursor: grabbing;
 }
@@ -129,7 +129,7 @@ body{
 }
 
 .after-div3 {
-  top: 68.9%;
+  top: 70.1%;
   border-top: 50px solid skyblue;
   left:0;
   content: "";
@@ -142,7 +142,7 @@ body{
 .hex-structure4 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #ee6557;
-  top:-15px;
+  top:-34px;
   left:775px;
   cursor: grabbing;
 }
@@ -165,7 +165,7 @@ body{
 }
 
 .after-div4 {
-  top: 68.65%;
+  top: 69.8%;
   border-top: 50px solid #ee6557;
   left:0;
   content: "";
@@ -179,7 +179,7 @@ body{
 .hex-structure5 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #E9E1D6;
-  top:-115px;
+  top:-133px;
   left:960px;
   cursor: grabbing;
 }
@@ -194,7 +194,7 @@ body{
 
 .before-div5 {
   top: 47.2%;
-  border-bottom: 50px solid white;
+  border-bottom: 50px solid #E9E1D6;
   content: "";
   position: absolute;
   border-left: 86px solid transparent;
@@ -203,8 +203,8 @@ body{
 }
 
 .after-div5 {
-  top: 68.5%;
-  border-top: 50px solid white;
+  top: 69.8%;
+  border-top: 50px solid #E9E1D6;
   left:0;
   content: "";
   position: absolute;
@@ -217,7 +217,7 @@ body{
 .hex-structure6 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #C5C2A3;
-  top:-48px;
+  top:-76px;
   left:500px;
   cursor: grabbing;
 }
@@ -229,7 +229,7 @@ body{
 }
 .before-div6 {
   top: 70.9%;
-  border-bottom: 50px solid white;
+  border-bottom: 50px solid #C5C2A3;
   content: "";
   position: absolute;
   border-left: 86px solid transparent;
@@ -238,8 +238,8 @@ body{
 }
 
 .after-div6 {
-  top: 92.1%;
-  border-top: 50px solid white;
+  top: 93.3%;
+  border-top: 50px solid #C5C2A3;
   left:0;
   content: "";
   position: absolute;
@@ -252,7 +252,7 @@ body{
 .hex-structure7 {
   position: relative;width: 170px;height: 98.15px;
   background-color: black;
-  top:-150px;
+  top:-177.3px;
   left:685px;
   cursor: grabbing;
 }
@@ -273,7 +273,7 @@ body{
 }
 
 .after-div7 {
-  top: 91.5%;
+  top: 92.8%;
   border-top: 50px solid black;
   left:0;
   content: "";
@@ -288,7 +288,7 @@ body{
 .hex-structure8 {
   position: relative;width:170px;height: 98.15px;
   background-color: #001E40;
-  top:-250px;
+  top:-277px;
   left:870px;
   cursor: grabbing;
 }
@@ -309,7 +309,7 @@ body{
 }
 
 .after-div8 {
-  top: 91.6%;
+  top: 92.6%;
   border-top: 50px solid #001E40;
   left:0;
   content: "";
@@ -323,7 +323,7 @@ body{
 .hex-structure9 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #A3A9A5;
-  top:-350px;
+  top:-377px;
   left:1055px;
   cursor: grabbing;
 }
@@ -345,7 +345,7 @@ body{
 }
 
 .after-div9 {
-  top: 91%;
+  top: 92.3%;
   border-top: 50px solid #A3A9A5;
   left:0;
   content: "";
