@@ -68,7 +68,7 @@ body{
    width: 170px;
    height: 98.15px;
    background-color: #858553;
-   top:13px;
+   top:12px;
    left:865px;
    cursor: grabbing;
  }
@@ -107,7 +107,7 @@ body{
   width: 170px;
   height: 98.15px;
   background-color: skyblue;
-  top:66px;
+  top:64px;
   left:590px;
   cursor: grabbing;
 }
@@ -142,7 +142,7 @@ body{
 .hex-structure4 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #ee6557;
-  top:-34px;
+  top:-35px;
   left:775px;
   cursor: grabbing;
 }
@@ -179,7 +179,7 @@ body{
 .hex-structure5 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #E9E1D6;
-  top:-133px;
+  top:-134px;
   left:960px;
   cursor: grabbing;
 }
@@ -217,7 +217,7 @@ body{
 .hex-structure6 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #C5C2A3;
-  top:-76px;
+  top:-78px;
   left:500px;
   cursor: grabbing;
 }
@@ -252,7 +252,7 @@ body{
 .hex-structure7 {
   position: relative;width: 170px;height: 98.15px;
   background-color: black;
-  top:-177.3px;
+  top:-179.3px;
   left:685px;
   cursor: grabbing;
 }
@@ -288,7 +288,7 @@ body{
 .hex-structure8 {
   position: relative;width:170px;height: 98.15px;
   background-color: #001E40;
-  top:-277px;
+  top:-279px;
   left:870px;
   cursor: grabbing;
 }
@@ -323,7 +323,7 @@ body{
 .hex-structure9 {
   position: relative;width: 170px;height: 98.15px;
   background-color: #A3A9A5;
-  top:-377px;
+  top:-379px;
   left:1055px;
   cursor: grabbing;
 }
